@@ -1,0 +1,17 @@
+{
+  "name": "raphaelrsa/poses",
+  "description": "Poses for draw",
+  "type": "project",
+  "authors": [
+    {
+      "name": "raphaeldealmeida",
+      "email": "jaguarnet7@gmail.com"
+    }
+  ],
+  "require": {
+    "seregazhuk/pinterest-bot": "^v5.8.2"
+  },
+  "scripts" :{
+    "server": "php -S localhost:8080 src/index.php"
+  }
+}
