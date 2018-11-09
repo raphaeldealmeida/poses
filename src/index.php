@@ -32,8 +32,16 @@ $rand = array_rand($pins,1);
 
 $pin = $pins[$rand];
 
+$dirTemp = sys_get_temp_dir();
+//const IMAGES_DIR =
+
 //foreach ($pins as $pin){
 //	var_dump($pin);
-echo "<img src='{$pin['images']['736x']['url']}' style='height: 90%;'>";
+//echo "<img src='{$pin['images']['736x']['url']}' style='height: 90%;'>";
 //}
+	$originalUrl = $pin['images']['736x']['url'];
+	$destination = $dirTemp . DIRECTORY_SEPARATOR . basename($originalUrl);
+	//file_put_contents($destination, file_get_contents($originalUrl));
 
+echo "<link rel=\"icon\" href=\"data:;base64,iVBORw0KGgo=\">";
+echo "<img src='data:image/jpg;base64,".base64_encode(file_get_contents($originalUrl)). "'/>";

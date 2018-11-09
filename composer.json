@@ -9,7 +9,8 @@
     }
   ],
   "require": {
-    "seregazhuk/pinterest-bot": "^v5.8.2"
+    "seregazhuk/pinterest-bot": "^v5.8.2",
+    "dirkgroenen/pinterest-api-php": "^0.2.11"
   },
   "scripts" :{
     "server": "php -S localhost:8080 src/index.php"
